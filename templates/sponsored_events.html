@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Choose City</title>
+    {%load static%}
+    <link href="{%static 'home.css'%}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="navbar"><h1>Cities</h1></div>
+    <div class="box">
+        <h2> My Sponsoreds <h2>
+        {% for event in events %}
+          <a href="/sponsor/event/{{event.pk}}"><div class="item">{{event.title}}</div></a>
+        {% endfor %}
+  </body>
+</html>
