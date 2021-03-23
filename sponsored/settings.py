@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '03a404j1+et1-gryekza=99%@75(e$-2023n(g69+am7_m$l)k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://sponsored-app.herokuapp.com/']
+ALLOWED_HOSTS = ['https://sponsored-app.herokuapp.com/']#, 'http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -150,8 +150,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'harshkakran05@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'ekantyadav001@gmail.com'
+EMAIL_HOST_PASSWORD = 'ohntgsyuisgqdzlu'
 
 
 django_heroku.settings(locals())
